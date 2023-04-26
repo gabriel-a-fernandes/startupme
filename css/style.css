@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+html{ 
+  font-size: 20px;
+}
+img{
+  max-width: 100%;
+}
+
 body {
   line-height: 1.6;
   font-size: 20px;
@@ -27,7 +34,11 @@ h6 {
 .heading-large {
   margin-bottom: 24px;
   text-transform: uppercase;
-  font-size: 30px;
+  /*font-size: 30px; (para deixar a medida relativa tem que 
+  dividir o px da font pelo px do body e colocar o valor final "rem",
+  tem que colocar no html acima também o tamanho "base"
+  conforme exemplo abaixo*/
+  font-size: 1.5rem;
   color: var(--color-brand-primary-base)
 }
 
@@ -74,6 +85,44 @@ h6 {
   color: var(--color-brand-primary-base);
 }
 
+.container{
+  width: 96vw;
+  margin: 0 auto;
+  outline: 1px solid red;
+  }
+
+#logo{
+outline: 1px solid blue;
+width: 46vw;
+display: inline-block;
+vertical-align: middle;
+}
+
+#menu{
+  outline: 1px solid green;
+  width: 46vw;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.all-workers{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .container {
+    width: 94vw;
+  }
+
+@media (max-width: 1440px){
+  .all-workers{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
+}
 
 /*
 /* Media Queries Examples
