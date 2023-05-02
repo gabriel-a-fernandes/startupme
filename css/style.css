@@ -88,18 +88,18 @@ h6 {
 .container{
   width: 96vw;
   margin: 0 auto;
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
   }
 
 #logo{
-outline: 1px solid blue;
+/* outline: 1px solid blue; */
 width: 46vw;
 display: inline-block;
 vertical-align: middle;
 }
 
 #menu{
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   width: 46vw;
   display: inline-block;
   vertical-align: middle;
@@ -107,21 +107,54 @@ vertical-align: middle;
 
 .all-workers{
   display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+  justify-content: space-between;
+  
+  }
+  .workers{
+    text-align: center;
+  }
+
+  .worker-name{
+    margin-bottom:0;
+    line-height: 1.2;
+    font-family:'Open sans', Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--color-interface-commom-dark)
+  }
+/* ALTERAR ESSA IMAGEM*/
+  .all-app-icon{
+    display: flex;
+    justify-content:space-between;
+    width: 25vw;
+    text-align: center;
+
+  }
+
 @media (max-width: 480px) {
   .container {
     width: 94vw;
   }
-
-@media (max-width: 1440px){
+  
   .all-workers{
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+
+  }
+  .workers{
+    margin-bottom: 1.2rem;
+  }
+ 
+}
+@media (max-width: 1440px){
+  .container{
+    width: 67vw;
   }
 
-}
+  .workers{
+    width:x 25vw
+  }
+
+
 }
 
 /*
