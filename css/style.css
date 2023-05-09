@@ -66,13 +66,24 @@ h6 {
 }
 
 .menu { 
-  font-family: 'Open Sans', Helvetica, Arial, Sans-serif;
+  top: 0%;
+  position: absolute;
+  background-color: grey;
+  padding: 1rem;
+  width: 60vw;
+  height: 100vh;
+  text-align: center;
+  left: -60vw;
+
+}
+.menuopen {
+  left: 0;
 }
 
 .menu-item {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 400;
+  
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .menu-item a { 
@@ -100,9 +111,12 @@ vertical-align: middle;
 
 #menu{
   /* outline: 1px solid green; */
-  width: 46vw;
-  display: inline-block;
-  vertical-align: middle;
+  text-align: right;
+
+  
+}
+#navigator{
+  display: flex;
 }
 
 .all-workers{
@@ -130,6 +144,13 @@ vertical-align: middle;
     text-align: center;
 
   }
+
+@media (min-width:992px){
+  .menu-button{
+    display: none;
+  }
+    
+}
 
 @media (max-width: 480px) {
   .container {
